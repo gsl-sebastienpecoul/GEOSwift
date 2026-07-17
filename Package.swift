@@ -10,8 +10,8 @@ let package = Package(
     targets: [
         .binaryTarget(
             name: "geos",
-            url: "https://github.com/gsl-sebastienpecoul/GEOSwift/releases/download/11.2.0-b2/geos.xcframework.zip",
-            checksum: "574bbd5b9404ad4321d614d54db168863b78c4ec79af71044bef0237afb1efff"
+            url: "https://github.com/gsl-sebastienpecoul/GEOSwift/releases/download/11.2.0-b3/geos.xcframework.zip",
+            checksum: "4655d6b38d3313282ae9609d314428c91b26962a2cce56569e5ab26657c08c2a"
         ),
         .target(
             name: "GEOSwift",
