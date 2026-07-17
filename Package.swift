@@ -7,10 +7,12 @@ let package = Package(
     products: [
         .library(name: "GEOSwift", targets: ["GEOSwift"])
     ],
-    dependencies: [
-        .package(url: "https://github.com/GEOSwift/geos.git", from: "9.0.0")
-    ],
     targets: [
+        .binaryTarget(
+            name: "geos",
+            url: "https://github.com/gsl-sebastienpecoul/GEOSwift/releases/download/11.2.0-binary/geos.xcframework.zip",
+            checksum: "ff281779ea6e3a3d19c495d963da209605e37f39e59fde631235e65784c721da"
+        ),
         .target(
             name: "GEOSwift",
             dependencies: ["geos"]
